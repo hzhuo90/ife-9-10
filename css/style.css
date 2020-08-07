@@ -9,6 +9,9 @@
   	line-height: 28px;
   	margin-top: 20px;
   }
+  body{
+    -webkit-font-smoothing: antialiased;
+  }
   button{
   	cursor: pointer;  /*使鼠标移到button时光标变手*/
   }
@@ -302,10 +305,60 @@
   	width: 970px;
   	height: 710px;
   	margin: 65px auto;
+/*    display: flex;*/
   }
   .photo img{
   	float: left;
   	margin: 0 30px 30px 0;
+  }
+  .photo img:hover .teaMask{
+    display: block;
+  }
+  .teaMask{
+    width: 470px;
+    height: 340px;
+    float: left;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    position: absolute;
+    display: none;
+  }
+  .teaMask h5{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: -110px;
+    margin-top: 5px;
+    color: rgba(255,255,255,0.3);
+  }
+  .teaMask h4{
+    color: #fff;
+    margin-top: 108px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .link{
+    margin-top: 8px;
+    margin-left: 25px;
+  }
+  .link a{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+  .link a:hover{
+    border: 1px solid rgba(80, 0, 0, .8);
+  }
+  .link a img{
+    margin: 14px;
+    height: 17px;
+  }
+  .maskhover:hover .teaMask{
+    display: block;
   }
 
   .contacts{
@@ -393,6 +446,9 @@
   .About h5 a{
   	color: rgba(255,255,255,0.3);
   }
+  .About h5 a:hover {
+    color: rgb(255, 100, 0);
+}
   .About h4{
   	font-weight: 300;
   	line-height: 24px;
